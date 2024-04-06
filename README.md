@@ -49,7 +49,9 @@ Start the frontend server
   npm run serve
 ```
 
+Open your browser and navigate to http://localhost:8080 to view the application.
+
+
 ### Contributors
 [<img src="https://github.com/CCotuna.png" width="60px;"/><br /><sub><a href="https://github.com/CCotuna">CCotuna</a></sub>](https://github.com/CCotuna)
 
-Open your browser and navigate to http://localhost:8080 to view the application.
