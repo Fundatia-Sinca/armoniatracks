@@ -50,6 +50,6 @@ Start the frontend server
 ```
 
 ### Contributors
-[<img src="https://github.com/{{ contributor }}.png" width="60px;"/><br /><sub><ahref="https://github.com/{{ contributor }}">{{ contributor }}</a></sub>](https://github.com/{{ contributor }}/{{ repository }}
+[<img src="https://github.com/CCotuna.png" width="60px;"/><br /><sub><a href="https://github.com/CCotuna">CCotuna</a></sub>](https://github.com/CCotuna)
 
 Open your browser and navigate to http://localhost:8080 to view the application.
