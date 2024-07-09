@@ -1,10 +1,11 @@
 <template>
-  <div>
+  <!-- <div>
     <button @click="fetchData">Fetch Data</button>
     <ul>
       <li v-for="item in data" :key="item.id">{{ item.name }} - {{ item.age }}</li>
     </ul>
-  </div>
+  </div> -->
+  <RouterView />
 </template>
 
 <script setup>
