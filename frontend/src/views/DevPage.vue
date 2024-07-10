@@ -1,4 +1,5 @@
-<script setup></script>
+<script setup>
+import Form from "@/components/Form.vue" </script>
 <template>
     <div class="flex flex-col gap-y-5 p-5">
         <span class="text-4xl text-black">Development</span>
@@ -8,6 +9,7 @@
 
 
     <span class="p-5">Aici lucrati.</span>
+    <Form/>
 
 </template>
 <style scoped></style>
