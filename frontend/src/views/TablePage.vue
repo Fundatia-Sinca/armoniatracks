@@ -1,9 +1,10 @@
 <script setup>
-import Form from "@/components/Form.vue" 
+import Tabel from "@/components/Tabel.vue" 
 import Navbar from "@/components/Navbar.vue" </script>
 <template>
 
     <Navbar/>
-    <Form/>
+    <Tabel/>
+
 </template>
 <style scoped></style>

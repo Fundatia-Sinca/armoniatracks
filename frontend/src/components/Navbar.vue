@@ -1,46 +1,38 @@
 <script setup>
 </script>
 <template>
-  <nav
-    class="bg-white dark:bg-yellow-200 fixed w-full py-3 z-20 top-0 start-0 border-b border-gray-200 dark:border-yellow-200">
-    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-      <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
-        <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo">
-        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-black">Scoala de Muzică Armonia</span>
-      </a>
-      <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-        <button type="button"
-          class="text-black bg-yellow-600 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-yellow-300 dark:hover:bg-blue-700 dark:focus:ring-blue-800"><i class="bi bi-person-fill-gear"></i></button>
-        <button data-collapse-toggle="navbar-sticky" type="button"
-          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-          aria-controls="navbar-sticky" aria-expanded="false">
-          <span class="sr-only">Open main menu</span>
-          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M1 1h15M1 7h15M1 13h15" />
-          </svg>
-        </button>
-      </div>
-        <div class="flex items-center justify-center w-full md:w-auto md:order-1" id="navbar-sticky">
-          <ul
-            class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-yellow-200 md:dark:bg-yellow-200 dark:border-yellow-200">
-            <li>
-              <RouterLink :to="{ name: 'homepage' }"
-                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-black dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
-                Home Page</RouterLink>
-            </li>
-            <li>
-              <RouterLink :to="{ name: 'devpage' }"
-                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-black dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
-                Schedule</RouterLink>
-            </li>
-            <li>
-              <a href="#"
-                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-black dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Tabel</a>
-            </li>
-          </ul>
-        </div>
+  <header class="flex justify-between items-center bg-yellow-300 p-4">
+    <div class="flex items-center">
+      <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo">
+      <h1 class="text-2xl font-bold">Școala de Muzică Armonia</h1>
     </div>
-  </nav>
+
+    <nav>
+      <ul class="flex space-x-4">
+        <li>
+          <RouterLink :to="{ name: 'homepage' }"
+            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-black dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+            Home Page</RouterLink>
+        </li>
+        <li>
+          <RouterLink :to="{ name: 'devpage' }"
+            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-black dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+            Schedule</RouterLink>
+        </li>
+        <li>
+          <RouterLink :to="{ name: 'tablepage' }"
+            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-black dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Tabel</RouterLink>
+        </li>
+      </ul>
+    </nav>
+    <div class="flex items-center space-x-2">
+      <div class="p-2 bg-yellow-200 rounded-lg hover:bg-blue-700">
+        <button class="text-2xl text-black hover:text-white" @click="notify">🔔</button>
+      </div>
+      <div class="p-2 bg-yellow-200 rounded-lg hover:bg-blue-700">
+        <button class="text-2xl text-black hover:text-white" @click="signIn">👤</button>
+      </div>
+    </div>
+  </header>
 </template>
 <style scoped></style>

@@ -14,6 +14,11 @@ const router = createRouter({
       name: "devpage",
       component: () => import("@/views/DevPage.vue"),
     },
+    {
+      path: "/tablepage",
+      name: "tablepage",
+      component: () => import("@/views/TablePage.vue"),
+    },
   ],
   scrollBehavior(savedPosition) {
     if (savedPosition) {
