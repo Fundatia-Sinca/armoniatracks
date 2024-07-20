@@ -38,13 +38,13 @@
         ],
       }
     },
-   /* methods: {
-      exportPDF() 
-        const doc = new jsPDF();
-        doc.text("Școala de Muzică Armonia", 10, 10);
-        doc.autoTable({ html: this.$refs.table });
-        doc.save('table.pdf');
-    }*/
+    // methods: {
+    //   exportPDF() 
+    //     const doc = new jsPDF();
+    //     doc.text("Școala de Muzică Armonia", 10, 10);
+    //     doc.autoTable({ html: this.$refs.table });
+    //     doc.save('table.pdf');
+    // }
   }
    </script>
   
