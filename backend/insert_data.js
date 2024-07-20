@@ -1,4 +1,4 @@
-const db = require("./db");
+import { run, close } from "./db";
 
 const insertData = () => {
   const sql = `
@@ -13,12 +13,12 @@ const insertData = () => {
         ('Frank', 51);
     `;
 
-  db.run(sql, function (err) {
+  run(sql, function (err) {
     if (err) {
       return console.error("Error inserting data:", err.message);
     }
     console.log(`Rows inserted ${this.changes}`);
-    db.close();
+    close();
   });
 };
 

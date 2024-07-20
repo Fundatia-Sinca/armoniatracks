@@ -1,7 +1,7 @@
 const sqlite3 = require("sqlite3").verbose();
-const path = require("path");
+import { resolve } from "path";
 
-const dbPath = path.resolve(__dirname, "../database/database.sqlite");
+const dbPath = resolve(__dirname, "../database/database.sqlite");
 
 const db = new sqlite3.Database(dbPath, (err) => {
   if (err) {
@@ -11,4 +11,4 @@ const db = new sqlite3.Database(dbPath, (err) => {
   }
 });
 
-module.exports = db;
+export default db;

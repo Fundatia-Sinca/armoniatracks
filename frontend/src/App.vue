@@ -5,7 +5,7 @@
       <li v-for="item in data" :key="item.id">{{ item.name }} - {{ item.age }}</li>
     </ul>
   </div> -->
-  <div class="m-10 mt-4">
+  <div class="m-10 mt-4 mb-20">
     <NavBar />
   </div>
   <RouterView />
