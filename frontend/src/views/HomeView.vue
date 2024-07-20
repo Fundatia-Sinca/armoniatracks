@@ -1,10 +1,9 @@
 <script setup>
 import CardCP from "@/components/CardCP.vue"
-import Navbar from "@/components/Navbar.vue" </script>
+</script>
 
 <template>
-    
-    <Navbar/>
+
     <CardCP title="Exemplu utilizare card" class="p-5" />
 
 </template>
