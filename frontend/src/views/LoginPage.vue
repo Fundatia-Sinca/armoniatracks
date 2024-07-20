@@ -1,8 +1,8 @@
 <script setup>
-import SignIn from "@/components/SignIn.vue"
+import LogIn from "@/components/LogIn.vue"
 </script>
 <template>
 
-    <SignIn/>
+    <LogIn/>
 </template>
 <style scoped></style>

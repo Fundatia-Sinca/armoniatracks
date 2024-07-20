@@ -40,7 +40,7 @@
         <RouterLink :to="{ name: 'homepage' }" class="text-2xl text-black hover:text-white">🔔</RouterLink> 
       </div>
       <div class="p-2 bg-yellow-200 rounded-lg hover:bg-blue-700 flex items-center justify-center">
-        <RouterLink :to="{ name: 'signinpage' }" class="text-2xl text-black hover:text-white">👤</RouterLink>
+        <RouterLink :to="{ name: 'loginpage' }" class="text-2xl text-black hover:text-white">👤</RouterLink>
       </div>
     </div>
   </div>
