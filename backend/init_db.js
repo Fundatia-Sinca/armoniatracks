@@ -1,7 +1,7 @@
-const db = require('./db');
+import { run, close } from "./db";
 
 const initDb = () => {
-    const createTableSql = `
+  const createTableSql = `
         CREATE TABLE IF NOT EXISTS example_table (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             name TEXT NOT NULL,
@@ -9,14 +9,14 @@ const initDb = () => {
         );
     `;
 
-    db.run(createTableSql, (err) => {
-        if (err) {
-            console.error('Error creating table:', err.message);
-        } else {
-            console.log('Table created successfully.');
-        }
-        db.close();
-    });
+  run(createTableSql, (err) => {
+    if (err) {
+      console.error("Error creating table:", err.message);
+    } else {
+      console.log("Table created successfully.");
+    }
+    close();
+  });
 };
 
 initDb();

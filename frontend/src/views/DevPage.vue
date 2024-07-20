@@ -1,9 +1,8 @@
 <script setup>
-import Form from "@/components/Form.vue" 
-import Navbar from "@/components/Navbar.vue" </script>
+import ScheduleForm from "@/components/ScheduleForm.vue"
+</script>
 <template>
 
-    <Navbar/>
-    <Form/>
+    <ScheduleForm />
 </template>
 <style scoped></style>

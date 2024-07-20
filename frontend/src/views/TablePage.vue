@@ -1,10 +1,9 @@
 <script setup>
-import Tabel from "@/components/Tabel.vue" 
-import Navbar from "@/components/Navbar.vue" </script>
+import Tabel from "@/components/DBTable.vue"
+</script>
 <template>
 
-    <Navbar/>
-    <Tabel/>
+    <Tabel />
 
 </template>
 <style scoped></style>
