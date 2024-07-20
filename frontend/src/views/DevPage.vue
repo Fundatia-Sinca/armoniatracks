@@ -1,8 +1,9 @@
 <script setup>
 import ScheduleForm from "@/components/ScheduleForm.vue"
 </script>
-<template>
 
+<template>
     <ScheduleForm />
 </template>
+
 <style scoped></style>

@@ -1,9 +1,10 @@
 <script setup>
-import Tabel from "@/components/DBTable.vue"
+import DBTable from "@/components/DBTable.vue"
 </script>
+
 <template>
 
-    <Tabel />
+    <DBTable />
 
 </template>
 <style scoped></style>

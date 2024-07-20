@@ -17,23 +17,23 @@ import NavBar from '@/components/NavBarCP.vue';
 import Footer from "@/components/FooterCP.vue";
 
 
-import { ref } from 'vue';
-import api from './services/api.js';
+// import { ref } from 'vue';
+// import api from './services/api.js';
 
-const data = ref([]);
+// const data = ref([]);
 
-const fetchData = async () => {
-  try {
-    const response = await api.getData();
-    data.value = response.data.data;
-  } catch (error) {
-    console.error("There was an error fetching data:", error);
-  }
-};
+// const fetchData = async () => {
+//   try {
+//     const response = await api.getData();
+//     data.value = response.data.data;
+//   } catch (error) {
+//     console.error("There was an error fetching data:", error);
+//   }
+// };
 
-import { onMounted } from 'vue';
+// import { onMounted } from 'vue';
 
-onMounted(() => {
-  fetchData();
-});
+// onMounted(() => {
+//   fetchData();
+// });
 </script>
