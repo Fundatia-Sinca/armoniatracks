@@ -40,7 +40,25 @@
         <RouterLink :to="{ name: 'homepage' }" class="text-2xl text-black hover:text-white">🔔</RouterLink> 
       </div>
       <div class="p-2 bg-yellow-200 rounded-lg hover:bg-blue-700 flex items-center justify-center">
-        <RouterLink :to="{ name: 'loginpage' }" class="text-2xl text-black hover:text-white">👤</RouterLink>
+        <div class="relative" @mouseover="showdeskNavbar" @mouseleave="hidedeskNavbar">
+          <button class="text-xl sm:text-2xl">
+            <i class=""></i>👤
+          </button>
+          <transition name="fade">
+            <ul v-if="showdesknavbar"
+              class="absolute left-1/2 transform -translate-x-1/2 bg-white rounded shadow-lg mt-2 w-32 h-auto text-center z-50"
+              @mouseover="showdeskNavbar" @mouseleave="hidedeskNavbar">
+              <li class="p-2 hover:bg-gray-100 hover:text-black text-white bg-brown-sugar">
+                <RouterLink :to="{ name: 'loginpage' }" aria-current="page">Login
+                </RouterLink>
+              </li>
+              <li class="p-2 hover:bg-gray-100">
+                <RouterLink :to="{ name: 'signuppage' }" @click="hidedeskNavbar" class="text-black" aria-current="page">
+                  Sign up</RouterLink>
+                </li>
+            </ul>
+          </transition>
+        </div>
       </div>
     </div>
   </div>
